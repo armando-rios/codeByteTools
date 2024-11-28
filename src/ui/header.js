@@ -23,10 +23,32 @@ s2.classList = "font-medium text-lg p-2 rounded-lg duration-300 transition-all s
 s3.classList = "font-medium text-lg p-2 rounded-lg duration-300 transition-all scale-100 cursor-pointer"
 s4.classList = "font-medium text-lg p-2 rounded-lg duration-300 transition-all scale-100 cursor-pointer"
 
-sections.forEach((e) => {
-  e.addEventListener('click', setActive)
-})
 
+sections.forEach((e, index) => {
+  e.addEventListener('click', async (event) => {
+    setActive(event);
+
+    // Lazy Loading basado en el índice
+    switch (index) {
+      case 0:
+        const { numberConverter } = await import('./modules/numberConverter.js');
+        numberConverter();
+        break;
+      case 1:
+        const { asciiArtGenerator } = await import('./modules/asciiArtGenerator.js');
+        asciiArtGenerator();
+        break;
+      case 2:
+        const { binaryFileParser } = await import('./modules/binaryFileParser.js');
+        binaryFileParser();
+        break;
+      case 3:
+        const { dataEncodingSystem } = await import('./modules/dataEncodingSystem.js');
+        dataEncodingSystem();
+        break;
+    }
+  });
+});
 nav.appendChild(s1)
 nav.appendChild(s2)
 nav.appendChild(s3)
