@@ -6,17 +6,18 @@ export default {
   theme: {
     extend: {
       colors: {
-        base: '#1e1e2e',    // Base color
-        mantle: '#181825',  // Darker background
-        crust: '#11111b',   // Darkest background
-        text: '#cdd6f4',    // Text
-        subtext: '#a6adc8', // Subtext
-        surface0: '#313244', // Surface
-        surface1: '#45475a', // Lighter surface
-        lavender: '#b4befe', // Primary accent
-        sapphire: '#74c7ec', // Secondary accent
-        peach: '#fab387',    // Warning/complementary
-        green: '#a6e3a1'     // Success
+        base: '#1e1e2e',
+        mantle: '#181825',
+        crust: '#11111b',
+        text: '#cdd6f4',
+        subtext: '#a6adc8',
+        surface0: '#313244',
+        surface1: '#45475a',
+        lavender: '#b4befe',
+        sapphire: '#74c7ec',
+        peach: '#fab387',
+        green: '#a6e3a1',
+        mauve: '#cba6f7'
       }
     },
   },
