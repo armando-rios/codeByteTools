@@ -1,4 +1,6 @@
 import './style.css'
-import { setHeader } from './ui/header.js'
+import { setNav } from './ui/navBar.js'
+import { numberConverter } from './ui/modules/numberConverter.js'
 
-setHeader()
+setNav()
+numberConverter()
