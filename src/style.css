@@ -1,7 +1,9 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
-* {
+:root {
   color-scheme: dark;
+}
+
+@theme {
+  --color-theme-bg-primary: #1e1e2e;
 }
