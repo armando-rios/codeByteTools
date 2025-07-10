@@ -5,5 +5,155 @@
 }
 
 @theme {
+  /* Backgrounds */
+  --color-theme-bg-primary: var(--color-theme-bg-primary);
+  --color-theme-bg-secondary: var(--color-theme-bg-secondary);
+  --color-theme-bg-tertiary: var(--color-theme-bg-tertiary);
+  --color-theme-surface-0: var(--color-theme-surface-0);
+  --color-theme-surface-1: var(--color-theme-surface-1);
+  --color-theme-surface-2: var(--color-theme-surface-2);
+
+  /* Text colors */
+  --color-theme-text-primary: var(--color-theme-text-primary);
+  --color-theme-text-secondary: var(--color-theme-text-secondary);
+  --color-theme-text-muted: var(--color-theme-text-muted);
+
+  /* Accent colors */
+  --color-theme-accent-primary: var(--color-theme-accent-primary);
+  --color-theme-accent-secondary: var(--color-theme-accent-secondary);
+  --color-theme-accent-tertiary: var(--color-theme-accent-tertiary);
+
+  /* Semantic colors */
+  --color-theme-success: var(--color-theme-success);
+  --color-theme-warning: var(--color-theme-warning);
+  --color-theme-error: var(--color-theme-error);
+  --color-theme-info: var(--color-theme-info);
+
+  /* Border */
+  --color-theme-border: var(--color-theme-border);
+  --color-theme-border-hover: var(--color-theme-border-hover);
+}
+
+/* Catppuccin Mocha Theme */
+.catppuccin {
+  /* Backgrounds */
   --color-theme-bg-primary: #1e1e2e;
+  --color-theme-bg-secondary: #181825;
+  --color-theme-bg-tertiary: #11111b;
+  --color-theme-surface-0: #313244;
+  --color-theme-surface-1: #45475a;
+  --color-theme-surface-2: #585b70;
+
+  /* Text colors */
+  --color-theme-text-primary: #cdd6f4;
+  --color-theme-text-secondary: #bac2de;
+  --color-theme-text-muted: #a6adc8;
+
+  /* Accent colors */
+  --color-theme-accent-primary: #b4befe;
+  --color-theme-accent-secondary: #f5c2e7;
+  --color-theme-accent-tertiary: #94e2d5;
+
+  /* Semantic colors */
+  --color-theme-success: #a6e3a1;
+  --color-theme-warning: #f9e2af;
+  --color-theme-error: #f38ba8;
+  --color-theme-info: #89dceb;
+
+  /* Border */
+  --color-theme-border: #45475a;
+  --color-theme-border-hover: #585b70;
+}
+
+/* Dracula Theme */
+.dracula {
+  /* Backgrounds */
+  --color-theme-bg-primary: #282a36;
+  --color-theme-bg-secondary: #21222c;
+  --color-theme-bg-tertiary: #191a21;
+  --color-theme-surface-0: #44475a;
+  --color-theme-surface-1: #6272a4;
+  --color-theme-surface-2: #7888b4;
+
+  /* Text colors */
+  --color-theme-text-primary: #f8f8f2;
+  --color-theme-text-secondary: #e6e6e6;
+  --color-theme-text-muted: #a0a0a0;
+
+  /* Accent colors */
+  --color-theme-accent-primary: #bd93f9;
+  --color-theme-accent-secondary: #ff79c6;
+  --color-theme-accent-tertiary: #8be9fd;
+
+  /* Semantic colors */
+  --color-theme-success: #50fa7b;
+  --color-theme-warning: #f1fa8c;
+  --color-theme-error: #ff5555;
+  --color-theme-info: #8be9fd;
+
+  /* Border */
+  --color-theme-border: #44475a;
+  --color-theme-border-hover: #6272a4;
+}
+
+/* Nord Theme */
+.nord {
+  /* Backgrounds */
+  --color-theme-bg-primary: #2e3440;
+  --color-theme-bg-secondary: #3b4252;
+  --color-theme-bg-tertiary: #434c5e;
+  --color-theme-surface-0: #4c566a;
+  --color-theme-surface-1: #5e6779;
+  --color-theme-surface-2: #717a8c;
+
+  /* Text colors */
+  --color-theme-text-primary: #eceff4;
+  --color-theme-text-secondary: #e5e9f0;
+  --color-theme-text-muted: #d8dee9;
+
+  /* Accent colors */
+  --color-theme-accent-primary: #88c0d0;
+  --color-theme-accent-secondary: #b48ead;
+  --color-theme-accent-tertiary: #81a1c1;
+
+  /* Semantic colors */
+  --color-theme-success: #a3be8c;
+  --color-theme-warning: #ebcb8b;
+  --color-theme-error: #bf616a;
+  --color-theme-info: #5e81ac;
+
+  /* Border */
+  --color-theme-border: #4c566a;
+  --color-theme-border-hover: #5e6779;
+}
+
+/* Tokyo Night Theme */
+.tokyo-night {
+  /* Backgrounds */
+  --color-theme-bg-primary: #1a1b26;
+  --color-theme-bg-secondary: #16161e;
+  --color-theme-bg-tertiary: #0f0f14;
+  --color-theme-surface-0: #24283b;
+  --color-theme-surface-1: #343a55;
+  --color-theme-surface-2: #414868;
+
+  /* Text colors */
+  --color-theme-text-primary: #c0caf5;
+  --color-theme-text-secondary: #a9b1d6;
+  --color-theme-text-muted: #9aa5ce;
+
+  /* Accent colors */
+  --color-theme-accent-primary: #7aa2f7;
+  --color-theme-accent-secondary: #bb9af7;
+  --color-theme-accent-tertiary: #7dcfff;
+
+  /* Semantic colors */
+  --color-theme-success: #9ece6a;
+  --color-theme-warning: #e0af68;
+  --color-theme-error: #f7768e;
+  --color-theme-info: #2ac3de;
+
+  /* Border */
+  --color-theme-border: #24283b;
+  --color-theme-border-hover: #343a55;
 }
