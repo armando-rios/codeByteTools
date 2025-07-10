@@ -4,22 +4,24 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <title>CodeByteTools</title>
   </head>
 
-  <body class="bg-background">
+  <body class="catppuccin bg-theme-bg-primary text-theme-text-primary">
     <header
-      class="fixed top-0 left-0 right-0 p-2 text-center border-b"
+      class="fixed top-0 left-0 right-0 p-4 text-center border-b border-theme-border bg-theme-bg-secondary/80 backdrop-blur-sm z-10"
       id="header"
     >
-      <h1 class="text-4xl font-bold drop-shadow-[6px_6px_6px_#ea76cb]">
+      <h1
+        class="text-4xl font-bold text-theme-accent-primary drop-shadow-[0_0_12px_var(--color-theme-accent-primary)]"
+      >
         CodeByteTools
       </h1>
     </header>
-    <main id="app" class="flex flex-col items-center mt-16"></main>
+    <main id="app" class="flex flex-col items-center mt-24 mb-20 px-4"></main>
     <div
       id="navContainer"
-      class="fixed bottom-0 left-0 right-0 p-2 border-t"
+      class="fixed bottom-0 left-0 right-0 p-3 border-t border-theme-border bg-theme-bg-secondary/80 backdrop-blur-sm"
     ></div>
     <script type="module" src="/src/main.js"></script>
   </body>

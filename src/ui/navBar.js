@@ -1,17 +1,41 @@
 const navContainer = document.querySelector("#navContainer");
 let nav = document.createElement("nav");
-nav.classList = "flex gap-4 justify-center";
+nav.classList = "flex gap-3 justify-center flex-wrap";
 const s1 = document.createElement("a");
 const s2 = document.createElement("a");
 const s3 = document.createElement("a");
 const s4 = document.createElement("a");
 const sections = [s1, s2, s3, s4];
 
+// Define color for each section
+const sectionColors = [
+  "theme-accent-primary",
+  "theme-accent-secondary",
+  "theme-accent-tertiary",
+  "theme-info",
+];
+
 function setActive(event) {
-  sections.forEach((a) =>
-    a.classList.remove("bg-surface0", "text-lavander", "active"),
+  sections.forEach((section, index) => {
+    const color = sectionColors[index];
+    section.classList.remove("bg-theme-surface-0", "active");
+    section.classList.remove(`text-${color}`, `border-${color}`);
+    section.classList.add("text-theme-text-secondary", "border-theme-border");
+  });
+
+  const targetIndex = sections.indexOf(event.target);
+  const targetColor = sectionColors[targetIndex];
+
+  event.target.classList.remove(
+    "text-theme-text-secondary",
+    "border-theme-border",
   );
-  event.target.classList.add("bg-surface0", "text-lavander", "active");
+  event.target.classList.add(
+    "bg-theme-surface-0",
+    "active",
+    `text-${targetColor}`,
+    `border-${targetColor}`,
+  );
 }
 
 s1.innerText = "Number Converter";
@@ -20,11 +44,21 @@ s3.innerText = "Binary File Parser";
 s4.innerText = "Data Encoding System";
 
 const baseStyle =
-  "font-medium text-lg px-2 py-1 rounded-lg duration-300 transition-all scale-100 cursor-pointer w-56 text-center p-2";
-s1.classList = baseStyle + " bg-surface0 text-lavander active";
-s2.classList = baseStyle;
-s3.classList = baseStyle;
-s4.classList = baseStyle;
+  "font-medium text-sm px-4 py-2 rounded-lg duration-300 transition-all cursor-pointer text-center border-2 hover:bg-theme-surface-0/50";
+
+// Apply initial styles with individual colors
+s1.classList =
+  baseStyle +
+  " bg-theme-surface-0 text-theme-accent-primary active border-theme-accent-primary";
+s2.classList =
+  baseStyle +
+  " text-theme-text-secondary border-theme-border hover:text-theme-accent-secondary hover:border-theme-accent-secondary/50";
+s3.classList =
+  baseStyle +
+  " text-theme-text-secondary border-theme-border hover:text-theme-accent-tertiary hover:border-theme-accent-tertiary/50";
+s4.classList =
+  baseStyle +
+  " text-theme-text-secondary border-theme-border hover:text-theme-info hover:border-theme-info/50";
 
 sections.forEach((e, index) => {
   e.addEventListener("click", async (event) => {
