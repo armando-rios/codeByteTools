@@ -1,5 +1,11 @@
-const app = document.querySelector("#app");
+import { createPageLayout, createComingSoonMessage } from "../pageLayout.js";
 
 export async function asciiArtGenerator() {
-  app.innerHTML = `<h2 class="text-2xl font-semibold drop-shadow-[0_0_6px_#20B8B8]">ASCII Art Generator</h2>`;
+  const container = createPageLayout({
+    title: "ASCII Art Generator",
+    accentColor: "theme-accent-secondary",
+  });
+
+  // For now, add coming soon message
+  container.appendChild(createComingSoonMessage("ASCII Art Generator"));
 }

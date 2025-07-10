@@ -1,5 +1,11 @@
-const app = document.querySelector("#app");
+import { createPageLayout, createComingSoonMessage } from "../pageLayout.js";
 
 export async function dataEncodingSystem() {
-  app.innerHTML = `<h2 class="text-2xl font-semibold drop-shadow-[0_0_6px_#20B8B8]">Data Encoding System</h2>`;
+  const container = createPageLayout({
+    title: "Data Encoding System",
+    accentColor: "theme-info",
+  });
+
+  // For now, add coming soon message
+  container.appendChild(createComingSoonMessage("Data Encoding System"));
 }

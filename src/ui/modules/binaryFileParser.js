@@ -1,5 +1,11 @@
-const app = document.querySelector("#app");
+import { createPageLayout, createComingSoonMessage } from "../pageLayout.js";
 
 export async function binaryFileParser() {
-  app.innerHTML = `<h2 class="text-2xl font-semibold drop-shadow-[0_0_6px_#20B8B8]">Binary File Parser</h2>`;
+  const container = createPageLayout({
+    title: "Binary File Parser",
+    accentColor: "theme-accent-tertiary",
+  });
+
+  // For now, add coming soon message
+  container.appendChild(createComingSoonMessage("Binary File Parser"));
 }
