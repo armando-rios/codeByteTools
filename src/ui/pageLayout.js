@@ -7,6 +7,17 @@ const app = document.querySelector("#app");
  * @param {string} config.accentColor - Tailwind color class (e.g., 'theme-accent-primary')
  * @returns {HTMLElement} The content container element where you can append your content
  */
+const colorClasses = {
+  "theme-accent-primary":
+    "text-theme-accent-primary drop-shadow-[0_0_8px_var(--color-theme-accent-primary)]",
+  "theme-accent-secondary":
+    "text-theme-accent-secondary drop-shadow-[0_0_8px_var(--color-theme-accent-secondary)]",
+  "theme-accent-tertiary":
+    "text-theme-accent-tertiary drop-shadow-[0_0_8px_var(--color-theme-accent-tertiary)]",
+  "theme-accent-quaternary":
+    "text-theme-accent-quaternary drop-shadow-[0_0_8px_var(--color-theme-accent-quaternary)]",
+};
+
 export function createPageLayout({ title, accentColor }) {
   // Clear app
   app.innerHTML = "";
@@ -17,7 +28,7 @@ export function createPageLayout({ title, accentColor }) {
 
   // Create title
   const titleEl = document.createElement("h2");
-  titleEl.className = `text-3xl font-bold mb-6 text-${accentColor} drop-shadow-[0_0_8px_var(--color-${accentColor})]`;
+  titleEl.className = `text-3xl font-bold mb-6 ${colorClasses[accentColor]}`;
   titleEl.textContent = title;
 
   // Create card container

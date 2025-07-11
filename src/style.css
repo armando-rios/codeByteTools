@@ -22,6 +22,7 @@
   --color-theme-accent-primary: var(--color-theme-accent-primary);
   --color-theme-accent-secondary: var(--color-theme-accent-secondary);
   --color-theme-accent-tertiary: var(--color-theme-accent-tertiary);
+  --color-theme-accent-quaternary: var(--color-theme-accent-quaternary);
 
   /* Semantic colors */
   --color-theme-success: var(--color-theme-success);
@@ -53,6 +54,7 @@
   --color-theme-accent-primary: #b4befe;
   --color-theme-accent-secondary: #f5c2e7;
   --color-theme-accent-tertiary: #94e2d5;
+  --color-theme-accent-quaternary: #f38ba8;
 
   /* Semantic colors */
   --color-theme-success: #a6e3a1;
@@ -84,6 +86,7 @@
   --color-theme-accent-primary: #bd93f9;
   --color-theme-accent-secondary: #ff79c6;
   --color-theme-accent-tertiary: #8be9fd;
+  --color-theme-accent-quaternary: #ffb86c;
 
   /* Semantic colors */
   --color-theme-success: #50fa7b;
@@ -115,6 +118,7 @@
   --color-theme-accent-primary: #88c0d0;
   --color-theme-accent-secondary: #b48ead;
   --color-theme-accent-tertiary: #81a1c1;
+  --color-theme-accent-quaternary: #a3be8c;
 
   /* Semantic colors */
   --color-theme-success: #a3be8c;
@@ -146,6 +150,7 @@
   --color-theme-accent-primary: #7aa2f7;
   --color-theme-accent-secondary: #bb9af7;
   --color-theme-accent-tertiary: #7dcfff;
+  --color-theme-accent-quaternary: #f7768e;
 
   /* Semantic colors */
   --color-theme-success: #9ece6a;

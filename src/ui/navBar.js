@@ -12,7 +12,7 @@ const sectionColors = [
   "theme-accent-primary",
   "theme-accent-secondary",
   "theme-accent-tertiary",
-  "theme-info",
+  "theme-accent-quaternary",
 ];
 
 function setActive(event) {
@@ -58,7 +58,7 @@ s3.classList =
   " text-theme-text-secondary border-theme-border hover:text-theme-accent-tertiary hover:border-theme-accent-tertiary/50";
 s4.classList =
   baseStyle +
-  " text-theme-text-secondary border-theme-border hover:text-theme-info hover:border-theme-info/50";
+  " text-theme-text-secondary border-theme-border hover:text-theme-accent-quaternary hover:border-theme-accent-quaternary/50";
 
 sections.forEach((e, index) => {
   e.addEventListener("click", async (event) => {
