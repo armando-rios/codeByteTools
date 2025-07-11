@@ -9,14 +9,17 @@
 
   <body class="catppuccin bg-theme-bg-primary text-theme-text-primary">
     <header
-      class="fixed top-0 left-0 right-0 p-4 text-center border-b border-theme-border bg-theme-bg-secondary/80 backdrop-blur-sm z-10"
+      class="fixed top-0 left-0 right-0 p-4 border-b border-theme-border bg-theme-bg-secondary/80 backdrop-blur-sm z-10"
       id="header"
     >
-      <h1
-        class="text-4xl font-bold text-theme-accent-primary drop-shadow-[0_0_12px_var(--color-theme-accent-primary)]"
-      >
-        CodeByteTools
-      </h1>
+      <div class="flex items-center justify-between max-w-7xl mx-auto">
+        <h1
+          class="text-4xl font-bold text-theme-accent-primary drop-shadow-[0_0_12px_var(--color-theme-accent-primary)]"
+        >
+          CodeByteTools
+        </h1>
+        <div id="themeSelector"></div>
+      </div>
     </header>
     <main id="app" class="flex flex-col items-center mt-24 mb-20 px-4"></main>
     <div
