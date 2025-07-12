@@ -65,7 +65,9 @@ sections.forEach((e, index) => {
     setActive(event);
 
     if (index === 0) {
-      const { numberConverter } = await import("./modules/numberConverter.js");
+      const { numberConverter } = await import(
+        "./modules/numberConverter/index.js"
+      );
       numberConverter();
     }
     if (index === 1) {
